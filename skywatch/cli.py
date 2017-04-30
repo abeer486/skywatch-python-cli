@@ -2,9 +2,10 @@
 skywatch
 
 Usage:
-  skywatch data | -d
-  skywatch hello
+  skywatch -d | data
+  skywatch -v | values
   skywatch -h | --help
+  skywatch hello
   skywatch --version
 
 Options:
@@ -16,7 +17,7 @@ Examples:
 
 Help:
   For help using this tool, please open an issue on the Github repository:
-
+  https://github.com/abeer486/skywatch-python-cli
 
 """
 
@@ -29,7 +30,7 @@ from . import __version__ as VERSION
 
 
 def main():
-    """Main CLI entrypoint."""
+    """Main CLI entrypoint"""
     import skywatch.commands
     options = docopt(__doc__, version=VERSION)
 

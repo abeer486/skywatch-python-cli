@@ -1,0 +1,11 @@
+.cache
+.coverage
+*.egg-info
+build
+dist
+.setup.py.swp
+skywatch/cli.pyc
+skywatch/commands/__init__.pyc
+skywatch/commands/base.pyc
+skywatch/commands/hello.pyc
+
